@@ -20,7 +20,10 @@ export default function PageBtn() {
     let buttons = [
         {
             label: 'Синяя кнопка',
-            color: 'blue'
+            color: 'blue',
+            onClick: () => {
+                console.log('ты нажал на синюю кнопку')
+            }
         },
         {
             label: 'Синяя большая кнопка',
