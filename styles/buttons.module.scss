@@ -1,0 +1,50 @@
+$color-blue: #394BF2;
+$color-red: #EA2940;
+$color-white: #FFFFFF;
+
+.button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 42px;
+    font-weight: 500;
+    font-size: 18px;
+    border: 0;
+    line-height: 140%;
+    border-radius: 40px;
+    padding: 8px 27px 9px;
+    text-align: center;
+    justify-content: center;
+    gap: 4px;
+
+    &:hover {
+        background: #EA2940;
+        color: $color-white;
+    }
+
+    &--blue {
+        background: $color-blue;
+        color: $color-white;
+    }
+
+    &--red {
+        background: $color-red;
+        color: $color-white;
+    }
+
+    &--gray {
+        background: none;
+        color: #858B95;
+        border: 1px solid #CFD1D9;
+        img {
+            -webkit-filter: grayscale(100) brightness(200);
+            filter: grayscale(1);
+        }
+        &:hover {
+            img {
+                -webkit-filter: grayscale(100) brightness(200);
+                filter: grayscale(100) brightness(200);
+            }
+        }
+    }
+}
